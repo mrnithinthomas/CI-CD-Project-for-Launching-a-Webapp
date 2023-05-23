@@ -1,5 +1,9 @@
 <html>
+<head>
+    <title>Welcome to my DevOps Learning Project X</title>
+</head>
 <body>
-<h2>Hello  my dear friends!!!!</h2>
+    <h1>Welcome to my Page!</h1>
+    <p>This page is owned by Nithin Thomas.</p>
 </body>
 </html>
