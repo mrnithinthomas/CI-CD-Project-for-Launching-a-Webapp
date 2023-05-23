@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: projectx-pod
+spec:
+  containers:
+    - name: projectx-container
+      image: mrnithinthomas/projectx:latest
