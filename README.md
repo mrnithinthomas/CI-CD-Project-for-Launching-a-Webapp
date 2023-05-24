@@ -1,4 +1,4 @@
-# Project X
+## Project X
 
 This project is used to run a webapp using tomcat server.
 
@@ -53,14 +53,16 @@ will write Dockerfile, pom.xml. Jenkinsfile, manifest.yml ect to execute the jen
  so that the second contains the latest image, we are `performing a version`, also, we have <br>
  to separate the `latest image`.
 
-# Workflow
+## Workflow
 
 ![Work Flow](webapp.drawio.png)
 
-# Jenkins Steps
+##Project Outputs
+
+## 1. Jenkins Workflow Status
 
 ![Jenkins Steps](Jenkins_Workflow.png)
 
-# Hosted at Localhost/8080
+## 2. Hosted at Localhost/8080
 
 ![Jenkins Steps](webpage.png)
