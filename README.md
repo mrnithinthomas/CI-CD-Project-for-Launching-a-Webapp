@@ -12,4 +12,4 @@ This project is used to run a webapp using tomcat server.
 
 # Hosted at Localhost/8080
 
-![Jenkins Steps](Hosted Page.png)
+![Jenkins Steps](webpage.png)
