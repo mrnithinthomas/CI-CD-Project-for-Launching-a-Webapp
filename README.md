@@ -4,7 +4,7 @@ This project is used to run a webapp using tomcat server.
 
 ## Prerequisites/tools needed to work on this project. 
  
-- [tomcat image](https://github.com/awsdocs/amazon-ec2-user-guide/blob/master/doc_source/EC2_GetStarted.md](https://hub.docker.com/_/tomcat)
+- [tomcat image](https://hub.docker.com/_/tomcat)
 - [dockerHUB](https://www.docker.com/products/docker-hub/)
 - [Docker](https://docs.docker.com/get-started/overview/)
 - [Jenkins](https://www.jenkins.io/doc/tutorials/)
