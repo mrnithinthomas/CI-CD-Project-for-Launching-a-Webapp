@@ -20,4 +20,4 @@ Workflow
 
 # Hosted at Localhost/8080
 
-![Hosted Page](Hosted Page.png)
+![Jenkins Steps](Hosted Page.png)
