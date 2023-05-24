@@ -54,7 +54,7 @@ agent any
 				{
                  		withKubeCredentials(kubectlCredentials: [[caCertificate: '', clusterName: '', contextName: '', credentialsId: 'configmini', namespace: '', serverUrl: '']])  
                  		{
-                            sh 'kubectl apply -f k8test.yaml'
+                            sh 'kubectl apply -f manifest.yml'
                         }
 				}
 			}
