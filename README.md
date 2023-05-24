@@ -10,6 +10,6 @@ Workflow
 4. Created docker images is pushed into DockerHub
 5. USing the latest image avaliable in DockerHub, docker cotainer is hosted in the port 8080.
 
-![Work Flow]([https://example.com/image.png](https://drive.google.com/file/d/1y8P1Mm5qUH9832IF17PihA3F2QTqBAFj/view?usp=sharing))
+![Work Flow](webapp.drawio.png)
 
 
