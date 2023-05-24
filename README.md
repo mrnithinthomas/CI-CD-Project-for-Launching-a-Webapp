@@ -16,7 +16,7 @@ in this project, we are taking the help of various DevOps tools like GitHub, Jen
 dockerHUB and a `Kubernetes`.
 
 We will also learn about Kubernetes to know about this deployment and services and we  <br>
-will write 'Dockerfile', 'pom.xml', 'Jenkinsfile', 'manifest.yml' ect to execute the jenkins job.
+will write `Dockerfile`, `pom.xml`, `Jenkinsfile`, `manifest.yml` ect to execute the jenkins job.
 
 ## Agenda 
 
