@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Welcome Page</title>
+    <title>Welcome {{Display_Name}}</title>
 </head>
 <body>
     <h1>Welcome to my Page!</h1>
