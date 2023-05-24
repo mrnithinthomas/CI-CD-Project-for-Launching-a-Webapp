@@ -7,7 +7,7 @@ agent any
 		{
 			steps
 			{
-            git branch: 'main', url: 'https://github.com/mrnithinthomas/Project-X.git'
+            git branch: 'main', url: 'https://github.com/mrnithinthomas/CI-CD-Project-for-Launching-a-Webapp.git'
 			}
 		}
 		stage('Maven Build')
