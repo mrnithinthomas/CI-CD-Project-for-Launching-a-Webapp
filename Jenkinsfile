@@ -52,7 +52,7 @@ agent any
 			{
 				script
 				{
-                 		withKubeCredentials(kubectlCredentials: [[caCertificate: '', clusterName: '', contextName: '', credentialsId: 'configmini', namespace: '', serverUrl: '']])  
+                 		withKubeCredentials(kubectlCredentials: [[caCertificate: '', clusterName: '', contextName: '', credentialsId: 'kubesecretfile', namespace: '', serverUrl: '']])  
                  		{
                             sh 'kubectl apply -f manifest.yml'
                         }
