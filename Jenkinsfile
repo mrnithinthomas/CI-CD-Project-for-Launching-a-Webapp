@@ -14,10 +14,8 @@ agent any
 		{
 			steps
 			{
-            		PARAMETER_VALUE="${Display_Name}"
-
+            		PARAMETER_VALUE=$Display_Name
 			echo "<html><body><h1>Welcome to my JSP page is $PARAMETER_VALUE!</h1></body></html>" > index.jsp
-
 			cp -f index.jsp c:/ProgramData/Jenkins/.jenkins/workspace/paratest/src/main/webapp/
 			}
 		}
