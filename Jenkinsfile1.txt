@@ -3,22 +3,7 @@ pipeline
 agent any
 	stages
 	{
-		stage('Git Clone')
-		{
-			steps
-			{
-            git branch: 'main', url: 'https://github.com/mrnithinthomas/CI-CD-Project-for-Launching-a-Webapp.git'
-			}
-		}
-		stage('Passing Parameter')
-		{
-			steps
-			{
-            		PARAMETER_VALUE=$Display_Name
-			echo "<html><body><h1>Welcome to my JSP page is $PARAMETER_VALUE!</h1></body></html>" > index.jsp
-			cp -f index.jsp c:/ProgramData/Jenkins/.jenkins/workspace/paratest/src/main/webapp/
-			}
-		}
+		
 		stage('Maven Build')
 		{
 			steps
