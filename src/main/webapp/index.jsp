@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Welcome DevOps Team</title>
+    <title>Welcome DevOps TEAM</title>
 </head>
 <body>
     <h1>Welcome to my Page!</h1>
