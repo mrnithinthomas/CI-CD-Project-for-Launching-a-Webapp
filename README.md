@@ -5,8 +5,8 @@ This project is used to run a webapp using tomcat server.
 ## Prerequisites/tools needed to work on this project. 
  
 - [tomcat image](https://hub.docker.com/_/tomcat)
-- [dockerHUB](https://www.docker.com/products/docker-hub/)
 - [Docker](https://docs.docker.com/get-started/overview/)
+- [dockerHUB](https://www.docker.com/products/docker-hub/)
 - [Jenkins](https://www.jenkins.io/doc/tutorials/)
 - [Kubernetes](https://github.com/Krishnamohan-Yerrabilli/Kubernetes-hands-on)
 - [Jenkins](https://www.jenkins.io/doc/tutorials/)
