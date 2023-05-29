@@ -17,13 +17,13 @@ agent any
 			sh 'mvn clean package'
 			}
 		}
-		//stage('Docker Build')
-		//{
-		//	steps
-		//	{
-		//	sh 'docker build -t mrnithinthomas/projectx:${BUILD_NUMBER} .'
-		//	}
-		//}
+		stage('Docker Build')
+		{
+			steps
+			{
+			sh 'docker build -t mrnithinthomas/projectx:${BUILD_NUMBER} .'
+			}
+		}
 		stage('Docker Image Push')
 		{
 			steps
