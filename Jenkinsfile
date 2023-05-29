@@ -43,7 +43,7 @@ agent any
 		{
 			steps
 			{
-			sh 'docker run -d -p 8080:8080 --name projectx_${BUILD_NUMBER} mrnithinthomas/projectx:${BUILD_NUMBER}'
+				sh 'docker run -d -p ${Host_Port}:8080 --name projectx_${BUILD_NUMBER} mrnithinthomas/projectx:${BUILD_NUMBER}'
 			}
 		}
 		stage('K8 Build')
@@ -64,7 +64,7 @@ agent any
 		{
 			steps
 			{
-			sh 'echo http://localhost:8080/projectx/'
+			sh 'echo http://localhost:${Host_Port}/projectx/'
 			}
 		}
 		
