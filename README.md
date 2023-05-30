@@ -65,6 +65,10 @@ to have the necessary configurations and dependencies set up correctly in order 
 
 ![Jenkins Steps](Jenkins_Workflow.png)
 
-## 2. Hosted at Localhost/8080
+## 2. Building with Parameters(i.e. Build Branch and Host Port)
+
+![Jenkins Steps](Jenkins_Workflow.png)
+
+## 3. Hosted at Localhost/8080
 
 ![Jenkins Steps](webpage.png)
