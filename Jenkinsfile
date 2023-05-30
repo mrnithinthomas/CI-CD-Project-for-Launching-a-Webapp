@@ -53,7 +53,9 @@ agent any
                     			} 
                     			catch (Exception e) 
                     			{
-                        		sh 'echo Port ${port} is not available'                    			}
+                        		sh 'echo Port ${Host_Port} is not available'
+					error "Port ${Host_Port} is not available. Terminating the pipeline."
+					}
                 		}
 				
 			}
