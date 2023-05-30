@@ -8,27 +8,7 @@ agent any
 		{
 			steps
 			{
-            git branch: 'main', url: 'https://github.com/mrnithinthomas/CI-CD-Project-for-Launching-a-Webapp.git'
-			}
-		}
-		stage('Check Port Avaliability and Launch Container')
-		{
-			steps
-			{
-			
-                    			try 
-                    			{
-                        		sh 'echo lsof -i :${Host_Port}'
-                        		sh 'echo Port ${Host_Port} is available'
-					
-                    			} 
-                    			catch (Exception e) 
-                    			{
-                        		sh 'echo Port ${Host_Port} is not available'
-					error "Port ${Host_Port} is not available. Terminating the pipeline."
-					}
-                		
-				
+            		git branch: 'main', url: 'https://github.com/mrnithinthomas/CI-CD-Project-for-Launching-a-Webapp.git'
 			}
 		}
 		stage('Maven Build')
@@ -53,9 +33,9 @@ agent any
 				{
                  			withCredentials([string(credentialsId: 'dockerhubpwd', variable: 'dockerhubpwd')]) 
 					{
-                   		sh 'docker login -u mrnithinthomas -p ${dockerhubpwd}'
+                   			sh 'docker login -u mrnithinthomas -p ${dockerhubpwd}'
 					}
-                   	sh 'docker push mrnithinthomas/projectx:${BUILD_NUMBER}'
+                   		sh 'docker push mrnithinthomas/projectx:${BUILD_NUMBER}'
 				}
 			}
 		
