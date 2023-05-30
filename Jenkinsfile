@@ -3,6 +3,14 @@ pipeline
 agent any
 	stages
 	{
+		
+		stage('Git Clone')
+		{
+			steps
+			{
+            git branch: 'main', url: 'https://github.com/mrnithinthomas/CI-CD-Project-for-Launching-a-Webapp.git'
+			}
+		}
 		stage('Check Port Avaliability and Launch Container')
 		{
 			steps
@@ -21,13 +29,6 @@ agent any
 					}
                 		
 				
-			}
-		}
-		stage('Git Clone')
-		{
-			steps
-			{
-            git branch: 'main', url: 'https://github.com/mrnithinthomas/CI-CD-Project-for-Launching-a-Webapp.git'
 			}
 		}
 		stage('Maven Build')
