@@ -3,7 +3,26 @@ pipeline
 agent any
 	stages
 	{
-		
+		stage('Check Port Avaliability and Launch Container')
+		{
+			steps
+			{
+			
+                    			try 
+                    			{
+                        		sh 'echo lsof -i :${Host_Port}'
+                        		sh 'echo Port ${Host_Port} is available'
+					
+                    			} 
+                    			catch (Exception e) 
+                    			{
+                        		sh 'echo Port ${Host_Port} is not available'
+					error "Port ${Host_Port} is not available. Terminating the pipeline."
+					}
+                		
+				
+			}
+		}
 		stage('Git Clone')
 		{
 			steps
