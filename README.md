@@ -57,18 +57,18 @@ to have the necessary configurations and dependencies set up correctly in order 
 
 ## Workflow
 
-![Work Flow](webapp.drawio.png)
+![Work Flow](Pictures/webapp.drawio.png)
 
 ## Project Outputs
 
 ## 1. Jenkins Workflow Status
 
-![Jenkins Steps](Jenkins_Workflow.png)
+![Jenkins Steps](Pictures/Jenkins_Workflow.png)
 
 ## 2. Building with Parameters(i.e. Build Branch and Host Port)
 
-![Jenkins Steps](Jenkins_Workflow.png)
+![Jenkins Steps](Pictures/build parameters.png)
 
 ## 3. Hosted at Localhost/8080
 
-![Jenkins Steps](webpage.png)
+![Jenkins Steps](Pictures/webpage.png)
