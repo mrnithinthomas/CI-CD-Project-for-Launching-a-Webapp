@@ -50,6 +50,7 @@ agent any
                     			{
                         		sh 'echo lsof -i :${Host_Port}'
                         		sh 'echo Port ${Host_Port} is available'
+					sh 'docker run -d -p ${Host_Port}:8080 --name projectx_${BUILD_NUMBER} mrnithinthomas/projectx:${BUILD_NUMBER}'
                     			} 
                     			catch (Exception e) 
                     			{
@@ -60,16 +61,16 @@ agent any
 				
 			}
 		}
-		stage('Pull Image and run from DockerHub')
-		{
-			steps
-			{
+		//stage('Pull Image and run from DockerHub')
+		//{
+		//	steps
+		//	{
 				
-			sh 'docker run -d -p ${Host_Port}:8080 --name projectx_${BUILD_NUMBER} mrnithinthomas/projectx:${BUILD_NUMBER}'
+		//	sh 'docker run -d -p ${Host_Port}:8080 --name projectx_${BUILD_NUMBER} mrnithinthomas/projectx:${BUILD_NUMBER}'
                     			
 				
-			}
-		}
+		//	}
+		//}
 		stage('K8 Build')
 		{
 			steps
