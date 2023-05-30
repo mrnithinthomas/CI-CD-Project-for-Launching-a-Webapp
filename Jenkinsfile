@@ -3,6 +3,26 @@ pipeline
 agent any
 	stages
 	{
+		stage('Check Port Avaliability')
+		{
+			steps
+			{
+				script 
+				{
+                    			try 
+                    			{
+                        		sh 'echo lsof -i :${Host_Port}'
+                        		sh 'echo Port ${Host_Port} is available'
+                    			} 
+                    			catch (Exception e) 
+                    			{
+                        		sh 'echo Port ${Host_Port} is not available'
+					error "Port ${Host_Port} is not available. Terminating the pipeline."
+					}
+                		}
+				
+			}
+		}
 		stage('Git Clone')
 		{
 			steps
@@ -43,20 +63,9 @@ agent any
 		{
 			steps
 			{
-				script 
-				{
-                    			try 
-                    			{
-                        		sh 'echo lsof -i :${Host_Port}'
-                        		sh 'echo Port ${Host_Port} is available'
-					sh 'docker run -d -p ${Host_Port}:8080 --name projectx_${BUILD_NUMBER} mrnithinthomas/projectx:${BUILD_NUMBER}'
-                    			} 
-                    			catch (Exception e) 
-                    			{
-                        		sh 'echo Port ${Host_Port} is not available'
-					error "Port ${Host_Port} is not available. Terminating the pipeline."
-					}
-                		}
+				
+			sh 'docker run -d -p ${Host_Port}:8080 --name projectx_${BUILD_NUMBER} mrnithinthomas/projectx:${BUILD_NUMBER}'
+                    			
 				
 			}
 		}
