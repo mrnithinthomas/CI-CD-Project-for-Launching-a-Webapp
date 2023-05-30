@@ -50,7 +50,7 @@ agent any
                     			{
                         		sh 'echo lsof -i :${Host_Port}'
                         		sh 'echo Port ${Host_Port} is available'
-					sh 'docker run -d -p ${Host_Port}:8080 --name projectx_${BUILD_NUMBER} mrnithinthomas/projectx:${BUILD_NUMBER}'
+					//sh 'docker run -d -p ${Host_Port}:8080 --name projectx_${BUILD_NUMBER} mrnithinthomas/projectx:${BUILD_NUMBER}'
                     			} 
                     			catch (Exception e) 
                     			{
