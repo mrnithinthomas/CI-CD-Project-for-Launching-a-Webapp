@@ -68,6 +68,7 @@ to have the necessary configurations and dependencies set up correctly in order 
 ## 2. Building with Parameters(i.e. Build Branch and Host Port)
 
 ![BuildParameters](Pictures/build paramters.png)
+![Jenkins Steps](Pictures/build paramters.png)
 
 ## 3. Hosted at Localhost/8080
 
