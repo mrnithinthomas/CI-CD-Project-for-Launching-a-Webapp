@@ -67,7 +67,7 @@ to have the necessary configurations and dependencies set up correctly in order 
 
 ## 2. Building with Parameters(i.e. Build Branch and Host Port)
 
-![Parameters](Pictures/build paramters.png)
+![BuildParameters](Pictures/build paramters.png)
 
 ## 3. Hosted at Localhost/8080
 
