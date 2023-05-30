@@ -65,12 +65,12 @@ to have the necessary configurations and dependencies set up correctly in order 
 3. Jenkins will pulls the files from the SCM
 4. Jenkins initiate the job using Jenkinsfile
 5. As a part of jenkins job following activities are carried:-
-   i)   Files are push from GitHUB
-   ii)  Maven is used to clean and package the application using POM file instruction
-   iii) Using the Dockerfile docker image is build as tomcat as the base image
-   iv)  New docker image is pushed to DockerHUB
-   v)   Check whether the required port is avaliable to host the port if not then the job is terminated. If port is avaiable docker container is hosted in the requested port.
-   vi)  After hosting the docker container, for hosting the k8 pod using the same image, a check is carried out whether pod with the same name is already avaliable or not, if its already avaliable then the exisiting pod is deleted and new pod is created.
+  - i)   Files are push from GitHUB
+  -ii)  Maven is used to clean and package the application using POM file instruction
+  -iii) Using the Dockerfile docker image is build as tomcat as the base image
+  - iv)  New docker image is pushed to DockerHUB
+  - v)   Check whether the required port is avaliable to host the port if not then the job is terminated. If port is avaiable docker container is hosted in the requested port.
+  - vi)  After hosting the docker container, for hosting the k8 pod using the same image, a check is carried out whether pod with the same name is already avaliable or not, if its already avaliable then the exisiting pod is deleted and new pod is created.
 
 ## Project Outputs
 
