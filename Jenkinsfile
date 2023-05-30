@@ -3,26 +3,7 @@ pipeline
 agent any
 	stages
 	{
-		stage('Check Port Avaliability')
-		{
-			steps
-			{
-				script 
-				{
-                    			try 
-                    			{
-                        		sh 'echo lsof -i :${Host_Port}'
-                        		sh 'echo Port ${Host_Port} is available'
-                    			} 
-                    			catch (Exception e) 
-                    			{
-                        		sh 'echo Port ${Host_Port} is not available'
-					error "Port ${Host_Port} is not available. Terminating the pipeline."
-					}
-                		}
-				
-			}
-		}
+		
 		stage('Git Clone')
 		{
 			steps
@@ -58,6 +39,26 @@ agent any
 				}
 			}
 		
+		}
+		stage('Check Port Avaliability')
+		{
+			steps
+			{
+				script 
+				{
+                    			try 
+                    			{
+                        		sh 'echo lsof -i :${Host_Port}'
+                        		sh 'echo Port ${Host_Port} is available'
+                    			} 
+                    			catch (Exception e) 
+                    			{
+                        		sh 'echo Port ${Host_Port} is not available'
+					error "Port ${Host_Port} is not available. Terminating the pipeline."
+					}
+                		}
+				
+			}
 		}
 		stage('Pull Image and run from DockerHub')
 		{
