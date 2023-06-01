@@ -81,8 +81,7 @@ agent any
 						//sh "kubectl apply -f manifest.yaml"
                        				sh "kubectl apply -f projectx-pod.yaml"
 						sh "kubectl apply -f projectx-service.yaml"
-						sh "minikube start"
-						sh "minikube service -- projectx-pod"
+					
                     				} 
 					else 
 						{
@@ -91,8 +90,7 @@ agent any
 						//sh "kubectl apply -f manifest.yml"
 						sh "kubectl apply -f projectx-pod.yaml"
 						sh "kubectl apply -f projectx-service.yaml"	
-						sh "minikube start"
-						sh "minikube service -- projectx-pod"
+					
                     				}
                         		}
 				}
