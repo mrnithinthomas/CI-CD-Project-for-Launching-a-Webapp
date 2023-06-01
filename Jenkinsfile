@@ -80,6 +80,7 @@ agent any
                         			sh "kubectl delete pod ${podName}"
                        				sh "kubectl apply -f projectx-pod.yaml"
 						sh "kubectl apply -f projectx-service.yaml"
+						sh "minikube start"
 						sh "minikube service -- projectx-pod"
                     				} 
 					else 
@@ -88,6 +89,7 @@ agent any
                         			 // Replace with your pod creation command
 						sh "kubectl apply -f projectx-pod.yaml"
 						sh "kubectl apply -f projectx-service.yaml"	
+						sh "minikube start"
 						sh "minikube service -- projectx-pod"
                     				}
                         		}
