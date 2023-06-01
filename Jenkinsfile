@@ -88,7 +88,7 @@ agent any
 						{
                        		// Create a new pod if it doesn't exist
                         			 // Replace with your pod creation command
-						sh "kubectl apply -f manifest.yaml"
+						sh "kubectl apply -f manifest.yml"
 						//sh "kubectl apply -f projectx-pod.yaml"
 						//sh "kubectl apply -f projectx-service.yaml"	
 						//sh "minikube start"
