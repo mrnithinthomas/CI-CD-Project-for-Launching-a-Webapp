@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment # Kubernetes resource kind we are creating
 metadata:
-  name: projectx
+  name: projectx-pod
 spec:
   replicas: 3  #Number of replicas that will be created for this deployment
   selector:
