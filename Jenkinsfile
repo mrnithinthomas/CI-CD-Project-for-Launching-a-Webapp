@@ -80,7 +80,7 @@ agent any
                         			sh "kubectl delete pod ${podName}"
                        				sh "kubectl apply -f projectx-pod.yaml"
 						sh "kubectl apply -f projectx-service.yaml"
-						minikube service -- projectx-pod
+						sh "minikube service -- projectx-pod"
                     				} 
 					else 
 						{
@@ -88,20 +88,20 @@ agent any
                         			 // Replace with your pod creation command
 						sh "kubectl apply -f projectx-pod.yaml"
 						sh "kubectl apply -f projectx-service.yaml"	
-						minikube service -- projectx-pod
+						sh "minikube service -- projectx-pod"
                     				}
                         		}
 				}
 			}
 		
 		}
-		stage('Link to Page')
-		{
-			steps
-			{
-			sh 'echo http://localhost:${Host_Port}/projectx/'
-			}
-		}
+		//stage('Link to Page')
+		//{
+		//	steps
+		//	{
+		//	sh 'echo http://localhost:${Host_Port}/projectx/'
+		//	}
+		//}
 		
 	}
 }
