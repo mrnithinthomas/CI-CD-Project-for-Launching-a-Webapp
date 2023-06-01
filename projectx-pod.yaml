@@ -6,11 +6,11 @@ spec:
   replicas: 3  #Number of replicas that will be created for this deployment
   selector:
     matchLabels:
-      app: projectx
+      app: projectx-pod
   template:
     metadata:
       labels:
-        app: projectx
+        app: projectx-pod
     spec:
       containers:
         - name: projectx
