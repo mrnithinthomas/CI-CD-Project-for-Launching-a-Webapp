@@ -78,16 +78,16 @@ agent any
 						{
                         	// Delete the pod if it exists and then create a new pod
                         			sh "kubectl delete pod ${podName}"
-                       				sh "kubectl apply -f projectx-pod.yml"
-						sh "kubectl apply -f projectx-service.yml"
+                       				sh "kubectl apply -f projectx-pod.yaml"
+						sh "kubectl apply -f projectx-service.yaml"
 						minikube service -- projectx-pod
                     				} 
 					else 
 						{
                        		// Create a new pod if it doesn't exist
-                        			sh "kubectl apply -f manifest.yml"  // Replace with your pod creation command
-						sh "kubectl apply -f projectx-pod.yml"
-						sh "kubectl apply -f projectx-service.yml"	
+                        			sh "kubectl apply -f manifest.yaml"  // Replace with your pod creation command
+						sh "kubectl apply -f projectx-pod.yaml"
+						sh "kubectl apply -f projectx-service.yaml"	
 						minikube service -- projectx-pod
                     				}
                         		}
