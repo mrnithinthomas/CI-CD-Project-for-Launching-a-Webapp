@@ -1,9 +1,9 @@
 apiVersion: v1 # Kubernetes API version
 kind: Service # Kubernetes resource kind we are creating
 metadata:
-  name: projectx
+  name: projectx-pod
   labels:
-    name: projectx
+    name: projectx-pod
 spec:
   ports:
     - port: 8080 # The port that the service is running on in the cluster
@@ -11,5 +11,5 @@ spec:
       protocol: TCP
       nodePort: 31000
   selector:
-    app: hello-world-svc
+    app: projectx-pod
   type: NodePort # type of the service. LoadBalancer indicates that our service will be external.
