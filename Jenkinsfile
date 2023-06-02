@@ -97,13 +97,13 @@ agent any
 			}
 		
 		}
-		//stage('Link to Page')
-		//{
-		//	steps
-		//	{
-		//	sh 'echo http://localhost:${Host_Port}/projectx/'
-		//	}
-		//}
+		stage('Link to Page')
+		{
+			steps
+			{
+			sh 'echo http://localhost:${Host_Port}/projectx/'
+			}
+		}
 		
 	}
 }
