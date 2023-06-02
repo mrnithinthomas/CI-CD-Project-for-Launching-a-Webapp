@@ -13,7 +13,7 @@ spec:
         app: projectx-pod
     spec:
       containers:
-        - name: projectx1
+        - name: projectx
           image: mrnithinthomas/projectx:latest # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
